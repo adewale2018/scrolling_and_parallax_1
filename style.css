@@ -1,3 +1,31 @@
+.site-nav {
+  z-index: 20;
+}
+.site-header {
+  position: relative;
+  height: 100vh;
+  background: linear-gradient(180deg, rgb(103, 66, 150), rgb(54, 28, 88));
+  overflow: hidden;
+}
+.site-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
+  background-image: url(./images/hero.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  transform: rotate(-15deg) translateY(-50%) scale(2);
+  -webkit-transform: rotate(-15deg) translateY(-50%) scale(2);
+  -moz-transform: rotate(-15deg) translateY(-50%) scale(2);
+  -ms-transform: rotate(-15deg) translateY(-50%) scale(2);
+  -o-transform: rotate(-15deg) translateY(-50%) scale(2);
+  opacity: 0.6;
+}
 .site-nav .nav-link {
   position: relative;
   padding-bottom: 3px;
